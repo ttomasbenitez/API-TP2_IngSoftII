@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apiconfig
+data:
+  APP_MODE: production
+  DATABASE_URL: <DATABASE_URL>
+  LOG_LEVEL: info
+  LOG_URL: <LOG_URL>
+  PORT: "3000"
+  URL_API_TOKEN_SPOTIFY: https://accounts.spotify.com/api/token
+  URL_SPOTIFY_ARTIST_ID: https://api.spotify.com/v1/search?type=artist&limit=1&market=AR&q=
+  SPOTIFY_CLIENT_ID: <SPOTIFY_CLIENT_ID>
+  SPOTIFY_CLIENT_SECRET: <SPOTIFY_CLIENT_SECRET>
